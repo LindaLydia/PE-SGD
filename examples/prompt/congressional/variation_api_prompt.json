@@ -1,0 +1,32 @@
+{
+    "message_template": [
+        {
+            "role": "user",
+            "content": "{sample}\nBased on the above sample, using a variety of oral sentence structures {tone}, write a line from a public debating (beginning  with the appropriate formal address for the chamber) or speech delivered in the United States Congress, the UK Parliament, or the Canadian Parliament: "
+        }
+    ],
+    "replacement_rules": [
+        {
+            "constraints": {},
+            "replacements": {
+                "tone": [
+                    "in a occasionally adversarial but civil manner",
+                    "with a strong sense of patriotism",
+                    "in a formal and official tone",
+                    "showing deep respect and decorum",
+                    "using a respectful and measured style",
+                    "in a persuasive and compelling way",
+                    "adopting an argumentative tone",
+                    "with creative and imaginative language",
+                    "employing rhetorical flourishes",
+                    "in a thoughtful and reasoned manner",
+                    "with passionate conviction",
+                    "using clear and direct speech",
+                    "in a diplomatic and tactful style",
+                    "expressing urgency and determination",
+                    "with nuanced and balanced arguments"
+                ]
+            }
+        }
+    ]
+}

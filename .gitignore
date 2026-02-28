@@ -6,6 +6,24 @@ __pycache__/
 # C extensions
 *.so
 
+# personal settings
+data/*/*
+data/*.xml
+data/*.csv
+result*/
+fonts
+plotting/figures
+temp.txt
+temp*.txt
+temp*.py
+temp*.png
+temp*.jpg
+temp*.jpeg
+temp*.gif
+temp*.json
+temp*.csv
+environments_*.yaml
+
 # Distribution / packaging
 .Python
 build/

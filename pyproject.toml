@@ -1,0 +1,99 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PE-SGD"
+version = "0.0.1"
+maintainers = [{ name = "Tianyuan Zou", email = "tianyuanzou6125@gmail.com" }]
+requires-python = ">=3.10"
+license = { text = "MIT" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+]
+readme = "README.md"
+description = "PE-SGD: Differentially Private Deep Learning via evolution of Gradient Subspace"
+dependencies = [
+  "matplotlib",
+  "clean-fid",
+  "omegaconf",
+  "pandas",
+  "scikit-learn",
+  "generalimport",
+  "fld@git+https://github.com/marcojira/fld.git",
+  "openai",
+  "tenacity",
+  "datasets",
+  "peft",
+  "trl",
+  "prv-accountant",
+  "fastchat",
+  "azure-identity",
+]
+
+[project.optional-dependencies]
+dev = ["pre-commit", "black", "sphinx", "sphinx-rtd-theme", "sphinx-toolbox"]
+image = [
+  "blobfile",
+  "torch",
+  "imageio",
+  "clip@git+https://github.com/openai/CLIP.git",
+  "diffusers[pytorch]",
+  "transformers",
+  "improved-diffusion@git+https://github.com/fjxmlzn/improved-diffusion.git@8f6677c3c47d1c1ad2e22ad2603eaec4cc639805",
+  "wilds",
+  "cairosvg",
+  "python_avatars",
+  "azure-identity",
+  "datasets",
+  "peft",
+  "trl",
+  "prv-accountant",
+  "fastchat",
+]
+text = [
+  "gdown",
+  "tiktoken",
+  "python-dotenv",
+  "sentence-transformers",
+  "protobuf",
+  "sentencepiece",
+  "fschat@git+https://github.com/lm-sys/FastChat.git",
+  "transformers",
+  "accelerate",
+  "tqdm",
+  "azure-identity",
+  "datasets",
+  "peft",
+  "trl",
+  "prv-accountant",
+  "fastchat",
+]
+
+[project.urls]
+Homepage = "https://microsoft.github.io/DPSDA/"
+Documentation = "https://microsoft.github.io/DPSDA/"
+Repository = "https://github.com/microsoft/DPSDA"
+"Bug Tracker" = "https://github.com/microsoft/DPSDA/issues"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [
+  "doc*",
+  "build*",
+  "data*",
+  "example*",
+  "docker*",
+  "amlt*",
+  "dist*",
+  "_*",
+  "result*",
+  "font*",
+  "fonts*",
+  "run_scrips*",
+  "run_scrip*",
+  "temp_*",
+]

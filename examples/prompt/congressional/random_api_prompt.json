@@ -1,0 +1,8 @@
+{
+    "message_template": [
+        {
+            "role": "user",
+            "content": "Using a variety of oral sentence structures, write a line from a public debating (beginning  with the appropriate formal address for the chamber) or speech delivered in the United States Congress, the UK Parliament, or the Canadian Parliament: "
+        }
+    ]
+}

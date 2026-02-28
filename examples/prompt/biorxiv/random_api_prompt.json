@@ -1,0 +1,8 @@
+{
+    "message_template": [
+        {
+            "role": "user",
+            "content": "Using a variety of sentence structures, write a realistic bioRxiv preprint abstract (only the abstract, without other parts) for a life science (e.g. biology, neuroscience, cognition, etc.) research paper: "
+        }
+    ]
+}

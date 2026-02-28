@@ -1,0 +1,20 @@
+
+{
+    "message_template": [
+        {
+            "role": "user",
+            "content": "{sample}\nBased on the above sample, using a variety of sentence structures {tone}, generate a realistic electronic health question answering record. Output must strictly follow the XML format shown below. Do not include explanations or text outside of the XML tags.\n The required XML format is:\n\n<case>\n    <patient_narrative>\n        ...\n    </patient_narrative>\n    <patient_question>\n        <phrase id=\"0\" start_char_index=\"...\"> ... </phrase>\n        <phrase id=\"1\" start_char_index=\"...\"> ... </phrase>\n        ...\n    </patient_question>\n    <clinician_question>\n        ...\n    </clinician_question>\n    <note_excerpt>\n        ...\n    </note_excerpt>\n</case>\n\nNow generate one new <case> entry which has: (1) at least one <phrase> element in <patient_question> with correct character offset extract from <patient_narrative>; a <clinician_question> paraphrased from <patient_question>; and a detailed <note_excerpt> with plausible clinical note text. "
+        }
+    ],
+    "replacement_rules": [
+        {
+            "constraints": {},
+            "replacements": {
+                "tone": [
+                    "in proper tone",
+                    "in proper manner"
+                ]
+            }
+        }
+    ]
+}

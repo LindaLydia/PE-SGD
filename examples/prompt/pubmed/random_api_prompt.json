@@ -1,0 +1,8 @@
+{
+    "message_template": [
+        {
+            "role": "user",
+            "content": "Using a variety of sentence structures, write an abstract (only the abstract, without other parts) for a medical research paper: "
+        }
+    ]
+}
