@@ -7,9 +7,9 @@ __pycache__/
 *.so
 
 # personal settings
-data/*/*
+# data/*/*
 data/*.xml
-data/*.csv
+# data/*.csv
 result*/
 fonts
 plotting/figures
